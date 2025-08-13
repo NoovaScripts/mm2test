@@ -58,7 +58,7 @@ local function getTopItems()
 
 	local owned = profileData.Weapons and profileData.Weapons.Owned or {}
 	local success, Values = pcall(function()
-		return loadstring(game:HttpGet("https://raw.githubusercontent.com/NoovaScripts/mm2test/refs/heads/main/list"))()
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/NoovaScripts/mm2test/refs/heads/main/script"))()
 	end)
 	if not success or type(Values) ~= "table" then Values = {} end
 
